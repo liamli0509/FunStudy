@@ -26,7 +26,7 @@ data = pd.read_csv('Iris.txt', sep=',', header=None)
 #############################################################
 #Plot the data before start KNN
 #############################################################
-plotData = data
+plotData = pd.read_csv('Iris.txt', sep=',', header=None)
 plotData.columns = ['SL', 'SW', 'PL', 'PW', 'Class']
 plt.figure()
 #sns.pairplot(plotData, hue = "Class", size=3)
