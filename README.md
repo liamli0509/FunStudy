@@ -21,6 +21,12 @@ data on the branches is the same class, then you’ve properly classified it and
 to continue splitting it.
 4.	If the data isn’t the same, then you need to repeat the splitting process on this subset. The decision on how to split this subset is done the same way as the original dataset, and you repeat this process until you’ve classified all the data.
 
+
+Let's first play withe the famous Iris data (Iris.txt), which is classify Iris (kind of flower) base on 4 numeric features.
+KNN.py and SklearnDecisionTree.py contains the code to generate the following result.
+
+Let's plot the data first and we can cleanly see the flowers are well classified as the gaps between different groups are large.
+
 ![Image of Iris](https://github.com/liamli0509/FunStudy/blob/master/IrisPlot1.png)
 
 ## Monte Carlo for Option Pricing
