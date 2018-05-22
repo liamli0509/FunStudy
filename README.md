@@ -1,2 +1,2 @@
 # FunStudy
-Study for fun
+Studynote while learning and playing with Python
