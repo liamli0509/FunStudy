@@ -88,5 +88,9 @@ Accuracy is  93.3333333333
 ```
 
 ## Monte Carlo for Option Pricing
+Using Monte Carlo to estimate option price
 ## Binomial Tree for Option Pricing
+Using Binomial Tree to estimated option price (Amercian Option has no closed solution)
 ## Using Spark/Pyspark to Estimate pi value
+First try on Spark. Spark is probably the better tool if we deal with large amount of data. Spark has different APIs and 
+
