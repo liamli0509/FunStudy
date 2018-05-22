@@ -1,2 +1,2 @@
 # FunStudy
-Studynote while learning and playing with Python
+## Studynote while learning and playing with Python
