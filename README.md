@@ -34,6 +34,30 @@ sns.pairplot(plotData, hue = "Class", palette='husl')
 
 ![Image of Iris](https://github.com/liamli0509/FunStudy/blob/master/IrisPlot1.png)
 
+Then apply KNN, split the train and test set by 70% and 30% and vote among the nearest 3 (K=3):
+```python
+def main():
+	train, test = splitData(data, 0.7)
+	print ('Train set: ' + repr(len(train)))
+	print ('Test set: ' + repr(len(test)))
+	predictions=[]
+	k = 3
+	for i in range(len(test)):
+		neighbors = Neighbors(train, test.iloc[i], k)
+		result = Response(neighbors)
+		predictions.append(result)
+	accuracy = getAccuracy(test, predictions)
+	print('Accuracy: ' + repr(accuracy) + '% when k=' + repr(k))
+	
+main()
+```
+The output is
+```
+Train set: 109
+Test set: 41
+Accuracy: 90.2439024390244% when k=3
+```
+
 ## Monte Carlo for Option Pricing
 ## Binomial Tree for Option Pricing
 ## Using Spark/Pyspark to Estimate pi value
