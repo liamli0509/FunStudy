@@ -27,6 +27,11 @@ KNN.py and SklearnDecisionTree.py contains the code to generate the following re
 
 Let's plot the data first and we can cleanly see the flowers are well classified as the gaps between different groups are large.
 
+```python
+import seaborn as sns
+sns.pairplot(plotData, hue = "Class", palette='husl')
+```
+
 ![Image of Iris](https://github.com/liamli0509/FunStudy/blob/master/IrisPlot1.png)
 
 ## Monte Carlo for Option Pricing
