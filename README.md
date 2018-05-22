@@ -57,6 +57,35 @@ Train set: 109
 Test set: 41
 Accuracy: 90.2439024390244% when k=3
 ```
+If we increase K to 4:
+```
+Train set: 104
+Test set: 46
+Accuracy: 93.47826086956522% when k=4
+```
+And K to 6:
+```
+Train set: 103
+Test set: 47
+Accuracy: 97.87234042553192% when k=6
+```
+It turns out K=6 give the best prediction, however, higher K value does not always lead to better prediction and it requires more computing.
+
+On the other hand, I used the DecisonTreeClassifier from sklearn to build the decision tree, sklearn is a Python module which has multi machine learning algorthms within it.
+If we do the following:
+```python
+from sklearn.cross_validation import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+clf_entropy = DecisionTreeClassifier(criterion = "entropy", random_state = 100, max_depth=3, min_samples_leaf=5)
+clf_entropy.fit(X_train, y_train)
+y_pred_en = clf_entropy.predict(X_test)
+print ("Accuracy is ", accuracy_score(y_test,y_pred_en)*100)
+```
+The output is
+```
+Accuracy is  93.3333333333
+```
 
 ## Monte Carlo for Option Pricing
 ## Binomial Tree for Option Pricing
