@@ -3,6 +3,7 @@
 This readme file contains the output and findings during Python/Spark learning and practice process, it is also the instruction file for codes in this project.
 
 ## KNN and Decision Tree
+### Files related: KNN.py, SklearnDecisionTree.py, Iris.txt, drug.txt
 KNN and Decision Tree are two famous and classic Machine Learning algorithms to classify data base on different features. KNN stands for K-Nearest-Neighbors and it works as following.
 For every point in our dataset:
 1.	calculate the distance between dataset and the current point
@@ -19,6 +20,8 @@ Decision Tree is another algorithm to classify the data, it requires less comput
 data on the branches is the same class, then you’ve properly classified it and don’t need
 to continue splitting it.
 4.	If the data isn’t the same, then you need to repeat the splitting process on this subset. The decision on how to split this subset is done the same way as the original dataset, and you repeat this process until you’ve classified all the data.
+
+![Image of Iris](https://github.com/liamli0509/FunStudy/blob/master/IrisPlot1.png)
 
 ## Monte Carlo for Option Pricing
 ## Binomial Tree for Option Pricing
