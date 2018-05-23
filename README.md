@@ -3,7 +3,7 @@
 This readme file contains the output and findings during Python/Spark learning and practice process, it is also the instruction file for codes in this project.
 
 ## KNN and Decision Tree
-### Files related: KNN.py, SklearnDecisionTree.py, Iris.txt, drug.txt
+### Files related: KNN.py, SklearnDecisionTree.py, Iris.txt, drug.txt [I'm an inline-style link](https://github.com/liamli0509/FunStudy/blob/master/KNN.py), [I'm an inline-style link](https://github.com/liamli0509/FunStudy/blob/master/SklearnDecisionTree.py)
 KNN and Decision Tree are two famous and classic Machine Learning algorithms to classify data base on different features. KNN stands for K-Nearest-Neighbors and it works as following.
 For every point in our dataset:
 1.	calculate the distance between dataset and the current point
@@ -86,11 +86,18 @@ The output is
 ```
 Accuracy is  93.3333333333
 ```
+## Web Crawler
+### Files: Arthrex.py [I'm an inline-style link](https://github.com/liamli0509/FunStudy/blob/master/Arthrex.py)
+Web Crawler to grab all product information from Arthrex.com, built on BeautifulSoup, urllib and Pandas.
 
 ## Monte Carlo for Option Pricing
+### Files: MonteCarloEUCall.py [I'm an inline-style link](https://github.com/liamli0509/FunStudy/blob/master/MonteCarloEUCall.py)
 Using Monte Carlo to estimate option price
+
 ## Binomial Tree for Option Pricing
+### Files: Binomial_Tree.py [I'm an inline-style link](https://github.com/liamli0509/FunStudy/blob/master/Binomial_Tree.py)
 Using Binomial Tree to estimated option price (Amercian Option has no closed solution)
+
 ## Using Spark/Pyspark to Estimate pi value
 First try on Spark. Spark is probably the better tool if we deal with large amount of data. Spark has different APIs and 
 
