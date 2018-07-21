@@ -15,6 +15,15 @@ Logic:
 5. Search keywords in job description, add one point for 'good' keywords and deduce one point for 'bad' keywords
 6. Put all info into a dataframe (sort by scores high to low) and write to a excel file
 
+functions:
+```python
+login():#log in to Indeed.ca
+searcher(keyword, city):#Search job and location
+list_job():#get job titles/id on the webpage to a list
+scorer(goodWords, badWords, textString):#search job summary and assign a score
+match(input_list):#get job title, job score and job url
+```
+
 Example:
 Search for Quantitative Jobs in Toronto, ON, take jobs first two pages, match with 'good' and 'bad' keywords and assign scores.
 
