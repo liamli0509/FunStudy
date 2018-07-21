@@ -7,6 +7,7 @@ This readme file contains the output and findings during Python/Spark learning a
 Craw job search result on Indeed and rank them by keywords in job summary/description.
 
 Sample output:
+
 |Job Score|Job Title|Job URL|
 | --- | --- | --- |
 |5|Intern - Quantitative Analyst, Risk Model Validation (4 month contract) job - Ontario Teachers' Pension Plan - Toronto, ON |www.indeed.ca/viewjob?jk=8cd96a69143f042a|
