@@ -2,6 +2,18 @@
 ### Studynote while learning and playing with Python
 This readme file contains the output and findings during Python/Spark learning and practice process, it is also the instruction file for codes in this project.
 
+## Rank Jobs on Indeed base on keywords
+### Code: Arthrex.py [Code](https://github.com/liamli0509/FunStudy/blob/master/Indeed_Find_Me_Jobs.py)
+Craw job search result on Indeed and rank them by keywords in job summary/description.
+
+Sample output:
+|Job Score|Job Title|Job URL|
+| --- | --- | --- |
+|5|Intern - Quantitative Analyst, Risk Model Validation (4 month contract) job - Ontario Teachers' Pension Plan - Toronto, ON |www.indeed.ca/viewjob?jk=8cd96a69143f042a|
+|5|Analyst, BI & Reporting job - Thinking Capital - Toronto, ON|www.indeed.ca/viewjob?jk=8a9f215327782141|
+|5|Data Scientist job - ChefHero - Toronto, ON |www.indeed.ca/viewjob?jk=1b5d6d63675d8f3a|
+
+
 ## KNN and Decision Tree
 ### Code and Data: KNN.py, SklearnDecisionTree.py, Iris.txt, drug.txt [Code](https://github.com/liamli0509/FunStudy/blob/master/KNN.py), [Code](https://github.com/liamli0509/FunStudy/blob/master/SklearnDecisionTree.py)
 KNN and Decision Tree are two famous and classic Machine Learning algorithms to classify data base on different features. KNN stands for K-Nearest-Neighbors and it works as following.
@@ -86,9 +98,6 @@ The output is
 ```
 Accuracy is  93.3333333333
 ```
-## Web Crawler
-### Code: Arthrex.py [Code](https://github.com/liamli0509/FunStudy/blob/master/Arthrex.py)
-Web Crawler to grab all product information from Arthrex.com, built on BeautifulSoup, urllib and Pandas.
 
 ## Monte Carlo for Option Pricing
 ### Code: MonteCarloEUCall.py [Code](https://github.com/liamli0509/FunStudy/blob/master/MonteCarloEUCall.py)
