@@ -4,7 +4,16 @@ This readme file contains the output and findings during Python/Spark learning a
 
 ## Rank Jobs on Indeed base on keywords
 ### Code: [Code](https://github.com/liamli0509/FunStudy/blob/master/Indeed_Find_Me_Jobs.py)
-Craw job search result on Indeed and rank them by keywords in job summary/description.
+
+Craw Indeed job search results and rank them by keywords in job summary/description.
+
+Logic:
+1. Login to Indeed.ca
+2. Enter job title and location
+3. Sort by date
+4. Grab all information(title, job description, URL) of each job
+5. Search keywords in job description, add one point for 'good' keywords and deduce one point for 'bad' keywords
+6. Put all info into a dataframe (sort by scores high to low) and write to a excel file
 
 Sample:
 
