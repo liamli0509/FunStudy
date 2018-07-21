@@ -3,8 +3,15 @@
 This readme file contains the output and findings during Python/Spark learning and practice process, it is also the instruction file for codes in this project.
 
 ## Rank Jobs on Indeed base on keywords
-### Code: Arthrex.py [Code](https://github.com/liamli0509/FunStudy/blob/master/Indeed_Find_Me_Jobs.py)
+### Code: [Code](https://github.com/liamli0509/FunStudy/blob/master/Indeed_Find_Me_Jobs.py)
 Craw job search result on Indeed and rank them by keywords in job summary/description.
+
+Sample:
+
+Search for Quantitative Jobs in Toronto, ON and take the first two pages (sort by date)
+```python
+main('Quantitative', 'Toronto, ON', 2)
+```
 
 Sample output:
 
