@@ -41,6 +41,8 @@ Sample output:
 |5|Intern - Quantitative Analyst, Risk Model Validation (4 month contract) job - Ontario Teachers' Pension Plan - Toronto, ON |www.indeed.ca/viewjob?jk=8cd96a69143f042a|
 |5|Analyst, BI & Reporting job - Thinking Capital - Toronto, ON|www.indeed.ca/viewjob?jk=8a9f215327782141|
 |5|Data Scientist job - ChefHero - Toronto, ON |www.indeed.ca/viewjob?jk=1b5d6d63675d8f3a|
+|4|Senior Analyst, Planning & Optimization - Programmatic job - Omnicom Media Group - Toronto, ON|www.indeed.ca/viewjob?jk=4e476397b1d291fa|
+|3|Analyst, Customer Insights job - The Home Depot - Toronto, ON |www.indeed.ca/viewjob?jk=65eb7047fb436e93|
 
 
 ## KNN and Decision Tree
