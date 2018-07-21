@@ -15,10 +15,13 @@ Logic:
 5. Search keywords in job description, add one point for 'good' keywords and deduce one point for 'bad' keywords
 6. Put all info into a dataframe (sort by scores high to low) and write to a excel file
 
-Sample:
+Example:
+Search for Quantitative Jobs in Toronto, ON, take jobs first two pages, match with 'good' and 'bad' keywords and assign scores.
 
-Search for Quantitative Jobs in Toronto, ON and take the first two pages (sort by date)
 ```python
+good = ['Python','data', 'SQL', 'investment', 'travel', 'AWS', 'quantitative', 'analytical', 'master', 'MSc',\
+        'modelling']
+bad = ['5+', 'C++', 'sales', 'CPA', 'Java']
 main('Quantitative', 'Toronto, ON', 2)
 ```
 
