@@ -25,8 +25,8 @@ good = ['Python','data', 'SQL', 'investment', 'travel', 'AWS', 'quantitative', '
 bad = ['5+', 'C++', 'sales', 'CPA', 'Java']
 ########################################################################################################
 baseURL = 'https://www.indeed.ca/'
-loginEmail = 'liam.li1993@gmail.com'
-password = 'Meng0509'
+loginEmail = 'XXXXXXXXX'
+password = 'XXXXXX'
 #########################################################################################################
 #Chrome setting
 chromeOptions = webdriver.ChromeOptions()
