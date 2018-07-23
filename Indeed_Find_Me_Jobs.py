@@ -108,10 +108,7 @@ def match(input_list):#get job title, job score and job url
         time.sleep(1)
         soup = BeautifulSoup(driver.page_source, "html.parser")
         title = soup.find('title').text
-        #title = soup.find('b', attrs={'class':'jobtitle'}).text
         titleList.append(title)
-        #company = soup.find('span', attrs={'class':'company'}).text
-        #companyList.append(company)
         try:
             summary = soup.find('span', attrs={'id':'job_summary'}).text
         except:
@@ -123,12 +120,6 @@ def match(input_list):#get job title, job score and job url
             url = url.replace('/m','',1)
         except:
             url = 'URL error'
-        #if title.endswith('.ca'):
-            #url = 'www.indeed.ca'+soup.find('link', attrs={'rel':'alternate'}).get('href')
-            #url = url.replace('/m','',1)
-        #else:
-            #url = 'www.ca.indeed.com'+soup.find('link', attrs={'rel':'alternate'}).get('href')
-            #url = url.replace('/m','',1)
         urlList.append(url)
         driver.close()
         time.sleep(1)
@@ -161,7 +152,6 @@ def main(keyword, city, pages):#main function
         except:
             print('No pop-up')
         time.sleep(1)
-        #driver.find_element_by_xpath("//*[@id='resultsCol']/a[10]/span/span").click()#next page
     data = pd.DataFrame({'Job Title': titleResult,
                          'Job Score': scoreResult,
                          'Job URL': urlResult})
