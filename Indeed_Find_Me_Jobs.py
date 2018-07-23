@@ -10,6 +10,7 @@ import os
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import time
 import pandas as pd
 
@@ -29,7 +30,9 @@ loginEmail = 'XXXXXXXXX'
 password = 'XXXXXX'
 #########################################################################################################
 #Chrome setting
-chromeOptions = webdriver.ChromeOptions()
+chromeOptions = Options()
+chromeOptions.add_argument('--headless')
+chromeOptions.add_argument('--window-size=1920x1080')
 prefs = {"download.default_directory" : savepath}#set download path here
 chromeOptions.add_experimental_option("prefs",prefs)
 chromedriver = "/Users/xiaochuanli/chromedriver"#path to chromedriver
@@ -115,7 +118,11 @@ def match(input_list):#get job title, job score and job url
             summary = soup.find('div', attrs={'class':'jobsearch-JobComponent-description icl-u-xs-mt--md'}).text
         score = scorer(good, bad, summary)
         scoreList.append(score)
-        url = 'www.indeed.ca'+soup.find('link', attrs={'rel':'alternate'}).get('href')
+        try:
+            url = 'www.indeed.ca'+soup.find('link', attrs={'rel':'alternate'}).get('href')
+            url = url.replace('/m','',1)
+        except:
+            url = 'URL error'
         #if title.endswith('.ca'):
             #url = 'www.indeed.ca'+soup.find('link', attrs={'rel':'alternate'}).get('href')
             #url = url.replace('/m','',1)
@@ -146,11 +153,11 @@ def main(keyword, city, pages):#main function
         titleResult.extend(titles)
         scoreResult.extend(scores)
         urlResult.extend(urls)
-        driver.find_element_by_class_name("np").click()
+        driver.find_elements_by_class_name("np")[-1].click()
         time.sleep(2)
         try:
             driver.find_element_by_xpath("*[@id='popover-link-x']").click()
-            break
+            print('pop up closed')
         except:
             print('No pop-up')
         time.sleep(1)
@@ -162,8 +169,11 @@ def main(keyword, city, pages):#main function
     writer = pd.ExcelWriter('%s_Summary_%s.xlsx'%(keyword,today))
     data.to_excel(writer, index=False)
     writer.save()
+    driver.quit()
     
-main('Quantitative', 'Toronto, ON', 2)
+#main('Data Analyst', 'Toronto, ON', 2)
+
+main('Quantitative','Toronto, ON', 5)
 
         
     
